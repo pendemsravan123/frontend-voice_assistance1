@@ -30,7 +30,7 @@ function App() {
 
       setQuestion(text);
 
-      const backendBaseUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+      const backendBaseUrl = "https://backend-voice-assistance2.onrender.com";
 
       try {
         const res = await axios.post(`${backendBaseUrl}/ask`, {
